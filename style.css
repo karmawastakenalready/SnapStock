@@ -354,6 +354,8 @@ body {
 
   .whychoose-container {
     display: block;
+    padding-bottom: 4em;
+    margin-bottom: 2rem;
   }
 
   .whychoose-main-text {
