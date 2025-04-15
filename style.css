@@ -1,0 +1,141 @@
+:root {
+  --soft-white: #f5f5f5;
+  --deep-teal: #1a5f7a;
+  --warm-coral: #ff6f61;
+  --charcoal-gray: #333;
+  --light-gray: #d3d3d3;
+  --spacing: 10px;
+}
+
+* {
+  margin: 0; 
+  padding: 0;
+  font-family: "Poppins";
+  font-size: 16px;
+}
+
+.nav {
+  display: flex;
+  background-color: var(--deep-teal);
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.nav-links a{
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--charcoal-gray);
+  text-align: center;
+  margin: auto;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  color: var(--warm-coral);
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  background-color: var(--soft-white);
+  height: 50vh;
+}
+
+.home-imgbox {
+  background-color:#4e4b4b;
+  flex-basis: 50%;
+  height: 80%;
+  margin-right: 25px;
+  border-radius: 8px;
+}
+
+.home-imgbox img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.home-text {
+  flex-basis: 50%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.home-text h3{
+  color: var(--deep-teal);
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.home-text p {
+  text-align: center;
+}
+
+.photoline {
+  width: 100%;
+  background-color: white;
+  padding: var(--spacing) 0;
+}
+
+.photoline-container {
+  height: 30vh;
+  background-color: var(--charcoal-gray);
+  padding: var(--spacing) 0;
+  overflow: hidden;
+}
+
+.photoline-scroll-container {
+  display: flex;
+  height: calc(30vh - 2 * var(--spacing));
+  gap: calc(2 * var(--spacing));
+  animation: continuous-scroll 40s linear infinite;
+  width: max-content;
+}
+
+.photoline-card {
+  height: 100%;
+  flex: 0 0 auto;
+  aspect-ratio: 16/9;
+  margin: 0 var(--spacing);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.photoline-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@keyframes continuous-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50%));
+  }
+}
+
+.photoline-container:hover .photoline-scroll-container {
+  animation-play-state: paused;
+}
+
+
+
+
+
