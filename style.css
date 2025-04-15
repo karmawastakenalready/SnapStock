@@ -201,17 +201,19 @@ body {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeate(5, 1fr);
-  grid-template-rows: repeat(6, 150px);
+  grid-template-rows: repeat(8, 150px);
   gap: 1rem;
   max-width: none;
   margin: 0 auto;
   grid-template-areas:
     "a a b b f"
+    "a a b b f"
     "c c d d f"
-    "e e d d f"
-    "e e g h i"
-    "k j g h i"
-    "k j g h i";
+    "c c d d i"
+    "e e g k i"
+    "h j g k i"
+    "h j g l l"
+    "h j g l l";
 }
 
 .a {
