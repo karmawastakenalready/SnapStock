@@ -6,7 +6,7 @@ Welcome to **SnapStock**, a static stock photo website created as a learning pro
 SnapStock is a lightweight, responsive website designed to display a collection of stock images in a clean and visually appealing grid layout. It was built to help me understand CSS concepts like Flexbox, Grid, media queries, and general styling, while keeping the HTML structure simple and accessible.
 
 ## Features
-- **Responsive Design**: Adapts to various screen sizes, from mobile to desktop.
+- **Responsive Design**: Adapts to various screen sizes, from mobile to desktop. **IN PROGRESS**
 - **Simple Gallery Layout**: Displays images in a clean, organized grid.
 - **Minimalist Codebase**: Easy to understand and modify for beginners.
 - **Static Site**: No backend or database, just HTML, CSS, and a sprinkle of JavaScript for minor interactivity.
