@@ -336,12 +336,15 @@ body {
   }
 
   .home-imgbox {
-    margin: 0rem 1rem;
+    margin: 0 auto;
   }
 
+
+  .photoline {
+    transform: translateY(2em)
+  }
   .photoline-container {
     padding-top: 2em;
-    transform: translate(2em);
     padding-bottom: 3em;
   }
 
