@@ -4,6 +4,7 @@
   --warm-coral: #ff6f61;
   --charcoal-gray: #333;
   --light-gray: #d3d3d3;
+  --cream: #fff8e1;
   --spacing: 10px;
 }
 
@@ -20,10 +21,15 @@ body {
 
 
 .nav {
-  display: flex;
   background-color: var(--deep-teal);
+  padding: 1.5rem 0;
+}
+
+.nav-container {
+  display: flex;
   justify-content: space-between;
-  padding: 10px;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .nav-links {
@@ -35,7 +41,7 @@ body {
 .nav-links a{
   text-decoration: none;
   font-weight: 700;
-  color: var(--charcoal-gray);
+  color: var(--cream); /* 4.6:1 contrast ratio*/
   text-align: center;
   margin: auto;
   font-size: 1.2em;
@@ -46,14 +52,23 @@ body {
   color: var(--warm-coral);
 }
 
+.home {
+  width: 100%;
+}
+
 .home-container {
+  background-color: var(--soft-white);
+  height: 50vh;
+}
+
+.home-subcontainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  margin: 0;
-  background-color: var(--soft-white);
-  height: 50vh;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  max-width: 1500px;
 }
 
 .home-imgbox {
@@ -94,10 +109,12 @@ body {
   width: 100%;
   background-color: white;
   padding: var(--spacing) 0;
+  margin: 2em 0em;
 }
 
 .photoline-container {
   height: 30vh;
+  margin-top: 5vh;
   background-color: var(--soft-white);
   padding: var(--spacing) 0;
   overflow: hidden;
@@ -124,7 +141,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
+  display: inline-block;
 }
 
 @keyframes continuous-scroll {
@@ -140,12 +157,18 @@ body {
   animation-play-state: paused;
 }
 
+.whychoose {
+  width: 100%;
+  height: 100%;
+}
+
 .whychoose-container {
   padding: 2rem;
-  background-color: rgb(238, 238, 238);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1500px;
+  margin: 2em auto;
   height: 20vh;
 }
 
@@ -191,6 +214,7 @@ body {
 
 .gallery-title {
   margin-bottom: 1rem;
+  max-width: 1500px;
 }
 
 .gallery-subtitle {
@@ -199,18 +223,19 @@ body {
 }
 
 .gallery-grid {
+  margin: 5vh 0px;
   display: grid;
   grid-template-columns: repeate(5, 1fr);
   grid-template-rows: repeat(8, 150px);
   gap: 1rem;
-  max-width: none;
+  max-width: 1500px;
   margin: 0 auto;
   grid-template-areas:
     "a a b b f"
     "a a b b f"
-    "c c d d f"
-    "c c d d i"
-    "e e g k i"
+    "c c e e f"
+    "c c e e i"
+    "d d g k i"
     "h j g k i"
     "h j g l l"
     "h j g l l";
@@ -304,7 +329,7 @@ body {
     display: none;
   }
 
-  .home-container {
+  .home-subcontainer {
     flex-direction: column;
     height: auto;
     gap: 2rem;
@@ -314,8 +339,22 @@ body {
     margin: 0rem 1rem;
   }
 
+  .photoline-container {
+    padding-top: 2em;
+    transform: translate(2em);
+    padding-bottom: 3em;
+  }
+
   .whychoose {
-    margin-top: 10vh;
+    margin-bottom: 7em;
+  }
+
+  .whychoose-container {
+    display: block;
+  }
+
+  .whychoose-main-text {
+    text-align: left;
   }
 
   .gallery-grid {
